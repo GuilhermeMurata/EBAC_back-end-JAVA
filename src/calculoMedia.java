@@ -16,7 +16,6 @@ public class calculoMedia {
         System.out.println("A soma das notas é:" + " " + totalNotas);
         return totalNotas;
     }
-
     public static double totalNotas;
 
     // MÉDIA DAS NOTAS + Condicional de aprovação
@@ -29,7 +28,6 @@ public class calculoMedia {
         }else{
             System.out.println("Aluno reprovado");
         }
-
         return notaFinal;
     }
 }
