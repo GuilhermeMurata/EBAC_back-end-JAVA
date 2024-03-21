@@ -7,15 +7,12 @@ public class CalculoMedia {
         Scanner n2 = new Scanner(System.in);
 
         System.out.println("Digite a nota do aluno: ");
-        double nota1 = n1.nextInt();
-        double nota2 = n2.nextInt();
+        double nota1 = scanner.nextDouble();
+        double nota2 = scanner.nextDouble();
 
         totalNotas = somaNotas();
         System.out.println(totalNotas);
     }
-    
-    public static double nota1;
-    public static double nota2;
 
     public static double somaNotas(){
         double totalNotas = nota1 + nota2;
