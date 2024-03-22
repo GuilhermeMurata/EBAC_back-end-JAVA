@@ -3,27 +3,39 @@ import java.util.Scanner;
 public class CalculoMedia {
 
     public static void main(String args[]){
-        Scanner n1 = new Scanner(System.in);
-        Scanner n2 = new Scanner(System.in);
 
-        System.out.println("Digite a nota do aluno: ");
-        double nota1 = n1.nextInt();
-        double nota2 = n2.nextInt();
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Digite a  primeira nota do aluno: ");
+        double num1 = scanner.nextDouble();
+        System.out.println("Digite a segunda nota do aluno: ");
+        double num2 = scanner.nextDouble();
+        System.out.println("Digite a terceira nota do aluno: ");
+        double num3 = scanner.nextDouble();
+        System.out.println("Digite a quarta nota do aluno: ");
+        double num4 = scanner.nextDouble();
 
-        totalNotas = somaNotas();
-        System.out.println(totalNotas);
+        double media = (num1 + num2 + num3 + num4) / 4;
+        System.out.println("A média do aluno é de: " + media);
+        
+        if (media >=7 && media <=10) {
+            System.out.println("Aluno aprovado");
+        } else if (media >=5){
+            System.err.println("O aluno esta de recuperação");
+        } else {
+            System.err.println("Aluno reprovado");
+        }
     }
-    
-    public static double nota1;
-    public static double nota2;
 
-    public static double somaNotas(){
-        double totalNotas = nota1 + nota2;
-        System.out.println("Total: " + totalNotas);
-        return totalNotas;
-    }
+    // static double nota1;
+    // static double nota2;
 
-    public static double totalNotas;
+    // public static double somaNotas(Scanner totalNotas){
+    //     double notaFinal = nota1 + nota2 / 4;
+    //     System.out.println("Total: " + totalNotas);
+    //     return notaFinal;
+    // }
+
+    // public static double totalNotas;
 
     // public static String getNotas(int nota) {
     //     if (nota1 >=7 && nota1 <=10) {
